@@ -4,6 +4,31 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+}
+.iconos :hover {
+    color: rgb(0, 0, 0);
+    transform: scale(0.95);
+}
+
 footer {
     color: white;
+}
+footer h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer p {
+    font-size: 1rem;
 }
