@@ -5,6 +5,127 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+@media screen and (max-width: 500px) {
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        padding: 20px;
+        display: grid;
+        grid-template-areas: 
+        "i1 i2 i3"
+        "i4 i5 i6";
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+        .i1 {
+            grid-area: i1;
+        }
+        .i2 {
+            grid-area: i2;
+        }
+        .i3 {
+            grid-area: i3;
+        }
+        .i4 {
+            grid-area: i4;
+        }
+        .i5 {
+            grid-area: i5;
+        }
+        .i6 {
+            grid-area: i6;
+        }
+        
+    .iconos img {
+        max-width: 50px;
+    }
+    .iconos p {
+        font-size: 0.6rem;
+    }
+    .texto-central {
+        padding: 10px; 
+    }
+    .texto-central p {
+        font-size: 0.8rem;
+    }
+    .logo-foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo-foot img {
+        max-width: 150px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: 
+        "isologo-foot"
+        "contacto"
+        "redes";
+        grid-template-columns: 100% ;
+        grid-template-rows: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .isologo-foot {
+        
+        grid-area: isologo-foot;
+
+        }
+        .isologo-foot img {
+            max-width: 100px;
+            }
+
+    .contacto {
+        grid-area: contacto;
+        padding: 10px;
+    }
+    .contacto h4 {
+        font-size: 0.7rem;
+    }
+    .contacto p {
+        font-size: 0.6rem;
+    }
+    .redes {
+        grid-area: redes;
+    }
+    .redes img {
+        max-width: 10px;
+    }
+        
+}
+div {
+    border: 1px solid coral;
+}
+
+.iconos {
+    font-style: italic;
+    color: white;
+}
+.iconos :hover {
+    color: rgb(0, 0, 0);
+    transform: scale(0.95);
+}
+
+
+
+
+/*
+.logofoot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logofoot img {
+    max-width: 150px;
+}
 .iconos {
     display: flex;
     flex-direction: row;
