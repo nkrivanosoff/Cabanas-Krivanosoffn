@@ -1,179 +1,163 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-
+body {
+  font-family: 'Roboto', sans-serif; }
 
 @media screen and (max-width: 500px) {
-    
-    .iconos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-        padding: 20px;
-        display: grid;
-        grid-template-areas: 
-        "i1 i2 i3"
-        "i4 i5 i6";
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 1fr 1fr;
-    }
-
-        .i1 {
-            grid-area: i1;
-        }
-        .i2 {
-            grid-area: i2;
-        }
-        .i3 {
-            grid-area: i3;
-        }
-        .i4 {
-            grid-area: i4;
-        }
-        .i5 {
-            grid-area: i5;
-        }
-        .i6 {
-            grid-area: i6;
-        }
-        
-    .iconos img {
-        max-width: 50px;
-    }
-    .iconos p {
-        font-size: 0.6rem;
-    }
-    .texto-central {
-        padding: 10px; 
-    }
+  .iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "i1 i2 i3" "i4 i5 i6";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr; }
+  .i1 {
+    grid-area: i1; }
+  .i2 {
+    grid-area: i2; }
+  .i3 {
+    grid-area: i3; }
+  .i4 {
+    grid-area: i4; }
+  .i5 {
+    grid-area: i5; }
+  .i6 {
+    grid-area: i6; }
+  .iconos img {
+    max-width: 50px; }
+  .iconos p {
+    font-size: 0.6rem; }
+  .texto-central {
+    padding: 10px; }
     .texto-central p {
-        font-size: 0.8rem;
-    }
-    .logo-foot {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+      font-size: 0.8rem; }
+  .logo-foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
     .logo-foot img {
-        max-width: 150px;
-        margin-top: 30px;
-    }
-
-    footer {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .isologo-foot {
-        display: flex;
-        justify-content: center;
-
-        }
-        .isologo-foot img {
-            max-width: 100px;
-            }
-
-    .contacto {
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
+      max-width: 150px;
+      margin-top: 20px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .isologo-foot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .isologo-foot img {
+      max-width: 100px; }
+  .contacto {
+    padding: 20px;
+    display: flex;
+    justify-content: center; }
     .contacto h4 {
-        font-size: 0.7rem;
-        color: white;
-    }
+      font-size: 0.7rem;
+      color: white; }
     .contacto p {
-        font-size: 0.6rem;
-    }
-    .redes {
-        display: flex;
-        justify-content: center;
-    }
-    .img-redes {
-        max-width: 20px;
-        margin: 10px;
-    }
-    
-}
+      font-size: 0.6rem; }
+  .redes {
+    display: flex;
+    justify-content: center; }
+  .img-redes {
+    max-width: 20px;
+    margin: 10px; } }
 
 @media screen and (min-width: 600px) {
-
-    .iconos {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .logo-foot img {
-        padding-top: 50px;
-        max-width: 250px;
-    }
-
-    footer {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .isologo-foot img {
-        max-width: 200px;
-    }
-    .contacto{
-        text-align: right;
-        list-style: none;
-        padding: 20px;
-        color: white;
-        
-    }
+  .iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px; }
+  .logo-foot img {
+    padding-top: 50px;
+    max-width: 250px; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .isologo-foot img {
+    max-width: 200px; }
+  .contacto {
+    text-align: right;
+    list-style: none;
+    padding: 20px;
+    color: white; }
     .contacto h4 {
-        font-size: 1.1rem;
-        color: white;
-        font-weight: bold;
-    }
+      font-size: 1.1rem;
+      color: white;
+      font-weight: bold; }
     .contacto p {
-        font-size: 1rem;
-        
-    }
-    .redes {
-        display: flex;
-        justify-content: center;
-    }
-    .img-redes {
-        max-width: 30px;
-        margin: 10px;
-    } 
-    .galeria {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-}
+      font-size: 1rem; }
+  .redes {
+    display: flex;
+    justify-content: center; }
+  .img-redes {
+    max-width: 30px;
+    margin: 10px; }
+  .galeria {
+    padding-left: 200px;
+    padding-right: 200px; } }
 
 .iconos {
-    font-style: italic;
-    color: white;
-}
-.iconos :hover {
-    color: rgb(0, 0, 0);
-    transform: scale(0.95);
-}
+  font-style: italic;
+  color: white; }
+  .iconos:hover {
+    color: black;
+    transform: scale(0.95); }
+
 .formulario {
-    display: flex;
-        flex-direction: row ;
-        justify-content: space-between;
-        flex-flow: nowrap;
-    margin: 20px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: nowrap;
+  margin: 20px; }
+
 .fecha {
-    display: flex;
-    flex-direction: row ;
-    flex-flow: nowrap;
-}
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap; }
+
+/* ACTIVIDAD SASS II: EXTEND Y MIXIN*/
+.fotos, .fotos .foto1, .fotos .foto2, .fotos .foto3, .fotos .foto4 {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  flex-flow: wrap;
+  justify-content: space-around; }
+  .fotos .foto1 {
+    background-color: brown;
+    margin: 40px;
+    border: 1px solid white; }
+    .fotos .foto1 p {
+      color: tan; }
+    .fotos .foto1 img {
+      border: 5px solid black; }
+  .fotos .foto2 {
+    background-color: navy;
+    margin: 20px;
+    border: 1px solid white; }
+    .fotos .foto2 p {
+      color: tan; }
+    .fotos .foto2 img {
+      border: 5px solid black; }
+  .fotos .foto3 {
+    background-color: darkmagenta;
+    margin: 20px;
+    border: 1px solid white; }
+    .fotos .foto3 p {
+      color: tan; }
+    .fotos .foto3 img {
+      border: 5px solid black; }
+  .fotos .foto4 {
+    background-color: darkcyan;
+    margin: 40px;
+    border: 1px solid white; }
+    .fotos .foto4 p {
+      color: tan; }
+    .fotos .foto4 img {
+      border: 5px solid black; }

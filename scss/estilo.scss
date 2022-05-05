@@ -1,0 +1,239 @@
+$margen: 20px;
+$margen2: 40px;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+  @media screen and (max-width: 500px) {
+    .iconos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      padding: $margen;
+      display: grid;
+      grid-template-areas: "i1 i2 i3" "i4 i5 i6";
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    .i1 {
+      grid-area: i1;
+    }
+  
+    .i2 {
+      grid-area: i2;
+    }
+  
+    .i3 {
+      grid-area: i3;
+    }
+  
+    .i4 {
+      grid-area: i4;
+    }
+  
+    .i5 {
+      grid-area: i5;
+    }
+  
+    .i6 {
+      grid-area: i6;
+    }
+  
+    .iconos {
+      img {
+        max-width: 50px;
+      }
+  
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  
+    .texto-central {
+      padding: 10px;
+  
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  
+    .logo-foot {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  
+      img {
+        max-width: 150px;
+        margin-top: $margen;
+      }
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .isologo-foot {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  
+      img {
+        max-width: 100px;
+      }
+    }
+  
+    .contacto {
+      padding: $margen;
+      display: flex;
+      justify-content: center;
+  
+      h4 {
+        font-size: 0.7rem;
+        color: white;
+      }
+  
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  
+    .redes {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .img-redes {
+      max-width: $margen;
+      margin: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .iconos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      padding: $margen;
+    }
+  
+    .logo-foot img {
+      padding-top: 50px;
+      max-width: 250px;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .isologo-foot img {
+      max-width: 200px;
+    }
+  
+    .contacto {
+      text-align: right;
+      list-style: none;
+      padding: $margen;
+      color: white;
+  
+      h4 {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  
+    .redes {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .img-redes {
+      max-width: 30px;
+      margin: 10px;
+    }
+  
+    .galeria {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+  }
+  
+  .iconos {
+    font-style: italic;
+    color: white;
+  
+    &:hover {
+      color: rgb(0, 0, 0);
+      transform: scale(0.95);
+    }
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    margin: $margen;
+  }
+  
+  .fecha {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+  }
+
+  /* ACTIVIDAD SASS II: EXTEND Y MIXIN*/
+
+  @mixin fotos($margen) {
+      margin: $margen;
+      border: 1px solid white;
+      p{
+          color: tan;
+      }
+      img {
+        border: 5px solid black; 
+      }     
+  }
+
+  .fotos {
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      background-color: gray;
+      flex-flow: wrap;
+      justify-content: space-around;
+      .foto1 {
+          @extend .fotos;
+          background-color: brown;
+          @include fotos ($margen2)
+      }
+      .foto2 {
+        @extend .fotos;
+        background-color: navy;
+        @include fotos ($margen)
+       }
+       .foto3 {
+        @extend .fotos;
+        background-color: darkmagenta;
+        @include fotos ($margen)
+       }
+       .foto4 {
+        @extend .fotos;
+        background-color: darkcyan;
+        @include fotos ($margen2)
+        
+       }
+
+  }

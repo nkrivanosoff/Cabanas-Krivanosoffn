@@ -1,0 +1,25 @@
+{
+  "name": "cabanas-krivanosoff",
+  "version": "1.0.0",
+  "description": "curso coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkrivanosoff/Cabanas-Krivanosoffn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkrivanosoff/Cabanas-Krivanosoffn/issues"
+  },
+  "homepage": "https://github.com/nkrivanosoff/Cabanas-Krivanosoffn#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
