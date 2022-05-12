@@ -1,239 +1,379 @@
 $margen: 20px;
 $margen2: 40px;
 
+$color_1: white;
+$color_2: black;
+$font-family_1: 'Roboto', sans-serif;
+
+
+/*COMÚN A WEB Y MOBILE --------------------- COMÚN A WEB Y MOBILE*/
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: $font-family_1;
 }
 
-  @media screen and (max-width: 500px) {
-    .iconos {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      text-align: center;
-      padding: $margen;
-      display: grid;
-      grid-template-areas: "i1 i2 i3" "i4 i5 i6";
-      grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 1fr 1fr;
-    }
-  
-    .i1 {
-      grid-area: i1;
-    }
-  
-    .i2 {
-      grid-area: i2;
-    }
-  
-    .i3 {
-      grid-area: i3;
-    }
-  
-    .i4 {
-      grid-area: i4;
-    }
-  
-    .i5 {
-      grid-area: i5;
-    }
-  
-    .i6 {
-      grid-area: i6;
-    }
-  
-    .iconos {
-      img {
-        max-width: 50px;
-      }
-  
-      p {
-        font-size: 0.6rem;
-      }
-    }
-  
-    .texto-central {
-      padding: 10px;
-  
-      p {
-        font-size: 0.8rem;
-      }
-    }
-  
-    .logo-foot {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-  
-      img {
-        max-width: 150px;
-        margin-top: $margen;
-      }
-    }
-  
-    footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .isologo-foot {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-  
-      img {
-        max-width: 100px;
-      }
-    }
-  
-    .contacto {
-      padding: $margen;
-      display: flex;
-      justify-content: center;
-  
-      h4 {
-        font-size: 0.7rem;
-        color: white;
-      }
-  
-      p {
-        font-size: 0.6rem;
-      }
-    }
-  
-    .redes {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .img-redes {
-      max-width: $margen;
-      margin: 10px;
-    }
-  }
-  
-  @media screen and (min-width: 600px) {
-    .iconos {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      text-align: center;
-      padding: $margen;
-    }
-  
-    .logo-foot img {
-      padding-top: 50px;
-      max-width: 250px;
-    }
-  
-    footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .isologo-foot img {
-      max-width: 200px;
-    }
-  
-    .contacto {
-      text-align: right;
-      list-style: none;
-      padding: $margen;
-      color: white;
-  
-      h4 {
-        font-size: 1.1rem;
-        color: white;
-        font-weight: bold;
-      }
-  
-      p {
-        font-size: 1rem;
-      }
-    }
-  
-    .redes {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .img-redes {
-      max-width: 30px;
-      margin: 10px;
-    }
-  
-    .galeria {
-      padding-left: 200px;
-      padding-right: 200px;
-    }
-  }
-  
-  .iconos {
-    font-style: italic;
-    color: white;
-  
-    &:hover {
-      color: rgb(0, 0, 0);
-      transform: scale(0.95);
-    }
-  }
-  
-  .formulario {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-flow: nowrap;
-    margin: $margen;
-  }
-  
-  .fecha {
-    display: flex;
-    flex-direction: row;
-    flex-flow: nowrap;
-  }
+/*Home ----------------------------------*/
 
-  /* ACTIVIDAD SASS II: EXTEND Y MIXIN*/
+.iconos {
+	font-style: italic;
+	color: $color_1;
+	div {
+		&:hover {
+			color: $color_2;
+			transform: scale(0.95);
+		}
+	}
+}
 
-  @mixin fotos($margen) {
-      margin: $margen;
-      border: 1px solid white;
-      p{
-          color: tan;
-      }
-      img {
-        border: 5px solid black; 
-      }     
-  }
+.formulario {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-flow: nowrap;
+	margin: 20px;
+}
+.fecha {
+	display: flex;
+	flex-direction: row;
+	flex-flow: nowrap;
+}
 
-  .fotos {
-      margin: 10px;
-      display: flex;
-      flex-direction: row;
-      background-color: gray;
-      flex-flow: wrap;
-      justify-content: space-around;
-      .foto1 {
-          @extend .fotos;
-          background-color: brown;
-          @include fotos ($margen2)
-      }
-      .foto2 {
-        @extend .fotos;
-        background-color: navy;
-        @include fotos ($margen)
-       }
-       .foto3 {
-        @extend .fotos;
-        background-color: darkmagenta;
-        @include fotos ($margen)
-       }
-       .foto4 {
-        @extend .fotos;
-        background-color: darkcyan;
-        @include fotos ($margen2)
-        
-       }
+/*Ubicación ----------------------------------*/ 
 
-  }
+.mapa {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/*Footer ----------------------------------*/ 
+
+.redes {
+	display: flex;
+	justify-content: center;
+}
+.img-redes {
+	max-width: 30px;
+	margin: 10px;
+}
+
+/*VERSIÓN MOBILE --------------------- VERSIÓN MOBILE --------------------- VERSIÓN MOBILE*/
+
+@media screen and (max-width: 500px) {
+	
+	/*Home - Index ----------------------------------*/
+	
+	.iconos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		text-align: center;
+		padding: 20px;
+		display: grid;
+		grid-template-areas: "i1 i2 i3" "i4 i5 i6";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 1fr 1fr;
+		img {
+			max-width: 50px;
+		}
+		p {
+			font-size: 0.6rem;
+		}
+	}
+	.i1 {
+		grid-area: i1;
+	}
+	.i2 {
+		grid-area: i2;
+	}
+	.i3 {
+		grid-area: i3;
+	}
+	.i4 {
+		grid-area: i4;
+	}
+	.i5 {
+		grid-area: i5;
+	}
+	.i6 {
+		grid-area: i6;
+	}
+	.texto-central {
+		padding: 10px;
+		p {
+			font-size: 0.8rem;
+		}
+	}
+
+		/*Cabañas ----------------------------------*/
+	
+		.fotos {
+			display: flex;
+			flex-direction: row;
+			flex-flow: wrap;
+			justify-content: space-around;
+			margin: 10px;
+			padding-bottom: 30px;
+			color: white;
+			div {
+				padding: 30px;
+				height: 200px;
+				width: 100%;
+				max-width: 350px;
+				text-align: center;
+				img {
+					width: 100%;
+				}
+				p {
+					font-size: 0.8rem;
+					margin: 10px;
+				}
+				h1 {
+					font-size: 1rem;
+					margin: 10px;
+					padding-top: 10px;
+				}
+				&:hover {
+					height: 300px;
+					color: black;
+				}
+			}
+	
+		}
+		
+	/*Reservas ----------------------------------*/
+
+	.reservas {
+		color: white;
+		font-size: 0.8rem;
+		width: 100%;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		img {
+			max-width: 30px;
+			margin: 5px;
+			padding-bottom: 5px;
+		}
+		label {
+			padding-right: 10px;
+		}
+		
+	}
+	.datos {
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: center;
+		div {
+			margin: 2px;
+		}
+	}
+	.buscar {
+		padding-top: 2px;
+		input {
+			width: 300px;
+		}		
+	}
+
+
+	/*Contacto ----------------------------------*/
+
+	.form-contact {
+		width: 350px;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+
+		h2 {
+			text-align: center;
+			font-size: 1rem;
+			margin-bottom: 20px;
+		}
+		input, textarea {
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 7px;
+			font-size: 0.8rem;
+		}
+	}
+	
+	/*Footer ----------------------------------*/ 
+
+	.logo-foot {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		img {
+			max-width: 150px;
+			margin-top: 20px;
+		}
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.isologo-foot {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		img {
+			max-width: 100px;
+			align-self: center;
+		}
+	}
+	.contacto {
+		text-align: center;
+		list-style: none;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		h4 {
+			font-size: 0.8rem;
+			color: $color_1;
+		}
+		p {
+			font-size: 0.8rem;
+		}
+	}
+	
+}
+
+/*VERSIÓN WEB --------------------- VERSIÓN WEB --------------------- VERSIÓN WEB */
+
+@media screen and (min-width: 500px) {
+
+	/*Home - Index ----------------------------------*/
+
+	.iconos {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		text-align: center;
+		padding: 20px;
+		div {
+			img {
+				max-width: 60px;
+			}
+		}
+	}
+
+	/*Cabañas ----------------------------------*/
+	
+	.fotos {
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: space-around;
+		padding: 30px;
+		color: white;
+		div {
+			padding: 30px;
+			height: 300px;
+			width: 50%;
+			text-align: center;
+			p {
+				font-size: 1rem;
+				margin: 10px;
+			}
+			h1 {
+				font-size: 1.5rem;
+				margin: 10px;
+				padding-top: 20px;
+			}
+			&:hover {
+				height: 400px;
+				color: black;
+			}
+		}
+
+	}
+	
+	/*Reservas ----------------------------------*/
+
+	.reservas {
+		color: white;
+		font-size: 1rem;
+		width: 100%;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		img {
+			max-width: 30px;
+			margin: 5px;
+			padding-bottom: 5px;
+		}
+		label {
+			padding-right: 8px;
+		}
+		
+	}
+	.datos {
+		display: flex;
+		flex-direction: row;
+		flex-flow: nowrap;
+		justify-content: space-around;
+		div {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	.buscar {
+		padding-top: 5px;
+	}
+
+	/*Contacto ----------------------------------*/
+
+	.form-contact {
+		width: 1100px;
+		margin: auto;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		margin-top: 20px;
+		h2 {
+			text-align: center;
+			font-size: 1.5rem;
+			margin-bottom: 20px;
+		}
+		input, textarea, button {
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 7px;
+		}
+	}
+
+	/*Footer ----------------------------------*/
+
+	.logo-foot {
+		img {
+			padding-top: 50px;
+			max-width: 250px;
+		}
+	}
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.isologo-foot {
+		img {
+			max-width: 200px;
+		}
+	}
+	.contacto {
+		text-align: right;
+		list-style: none;
+		padding: 20px;
+		color: $color_1;
+		h4 {
+			font-size: 1.1rem;
+			color: $color_1;
+			font-weight: bold;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+	
+}
