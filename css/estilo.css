@@ -94,7 +94,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; }
     .banner-error {
-      background: url(../img/banner-error.png);
+      background-color: black;
       background-size: 100%;
       text-align: center;
       height: 400px;
