@@ -50,7 +50,7 @@ body {
     padding-top: 100px; }
   .logo-banner {
     width: 200px;
-    margin-top: 25%; }
+    margin-top: 30%; }
   .banner-home {
     background: url(../img/banner-home-1.png);
     background-size: 100%;
@@ -93,6 +93,13 @@ body {
     height: 400px;
     background-repeat: no-repeat;
     background-attachment: fixed; }
+    .banner-error {
+      background: url(../img/banner-error.png);
+      background-size: 100%;
+      text-align: center;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
   .iconos {
     display: flex;
     flex-direction: row;
@@ -148,7 +155,7 @@ body {
         margin: 10px;
         padding-top: 10px; }
       .fotos div:hover {
-        height: 300px;
+        height: 350px;
         color: black; }
   /*Reservas ----------------------------------*/
   .reservas {
@@ -300,6 +307,20 @@ body {
     height: 700px;
     background-repeat: no-repeat;
     background-attachment: fixed; }
+    .banner-contacto {
+    background: url(../img/banner-contacto.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    .banner-error {
+      background-color: black;
+      background-size: 100%;
+      text-align: center;
+      height: 700px;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
   .iconos {
     display: flex;
     flex-direction: row;
@@ -321,7 +342,8 @@ body {
       padding: 30px;
       height: 450px;
       width: 50%;
-      text-align: center; }
+      text-align: center; 
+    }
       .fotos div p {
         font-size: 1rem;
         margin: 10px; }
@@ -330,7 +352,7 @@ body {
         margin: 10px;
         padding-top: 20px; }
       .fotos div:hover {
-        height: 520px;
+        height: 600px;
         color: black; }
   /*Reservas ----------------------------------*/
   .reservas {

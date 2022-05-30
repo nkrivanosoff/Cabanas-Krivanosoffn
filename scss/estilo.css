@@ -1,14 +1,16 @@
 @charset "UTF-8";
-div {
-  border: 3px solid orange;
-}
-
-/*COMÚN A WEB Y MOBILE*/
+/*COMÚN A WEB Y MOBILE --------------------- COMÚN A WEB Y MOBILE*/
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/*Home*/
+/*Home ----------------------------------*/
+.menu-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .iconos {
   font-style: italic;
   color: white;
@@ -20,7 +22,6 @@ body {
           transform: scale(0.95);
 }
 
-/*Home*/
 .formulario {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,133 +50,86 @@ body {
       flex-flow: nowrap;
 }
 
-.fotos {
-  margin: 10px;
+/*Ubicación ----------------------------------*/
+.mapa {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*Footer ----------------------------------*/
+.redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: gray;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.fotos .foto1 {
+.img-redes {
+  max-width: 30px;
   margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: gray;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: brown;
-  margin: 40px;
-  border: 1px solid white;
 }
 
-.fotos .foto1 p {
-  color: tan;
-}
-
-.fotos .foto1 img {
-  border: 5px solid black;
-}
-
-.fotos .foto2 {
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: gray;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: navy;
-  margin: 20px;
-  border: 1px solid white;
-}
-
-.fotos .foto2 p {
-  color: tan;
-}
-
-.fotos .foto2 img {
-  border: 5px solid black;
-}
-
-.fotos .foto3 {
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: gray;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: darkmagenta;
-  margin: 20px;
-  border: 1px solid white;
-}
-
-.fotos .foto3 p {
-  color: tan;
-}
-
-.fotos .foto3 img {
-  border: 5px solid black;
-}
-
-.fotos .foto4 {
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: gray;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: darkcyan;
-  margin: 40px;
-  border: 1px solid white;
-}
-
-.fotos .foto4 p {
-  color: tan;
-}
-
-.fotos .foto4 img {
-  border: 5px solid black;
-}
-
-/*VERSIÓN MOBILE*/
-@media screen and (max-width: 500px) {
-  /*Home - Index*/
+/*VERSIÓN MOBILE --------------------- VERSIÓN MOBILE --------------------- VERSIÓN MOBILE*/
+@media screen and (max-width: 576px) {
+  /*Home - Index ----------------------------------*/
+  .contenedorbanner {
+    margin-top: 100px;
+    padding-top: 100px;
+  }
+  .logo-banner {
+    width: 200px;
+    margin-top: 30%;
+  }
+  .banner-home {
+    background: url(../img/banner-home-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-cabanas {
+    background: url(../img/banner-cabanas-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-ubicacion {
+    background: url(../img/banner-ubicacion-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-reservas {
+    background: url(../img/banner-reservas-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-fotografias {
+    background: url(../img/banner-fotografias-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-contacto {
+    background: url(../img/banner-contacto-1.png);
+    background-size: 100%;
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .iconos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -238,8 +192,145 @@ body {
   .texto-central p {
     font-size: 0.8rem;
   }
+  /*Cabañas ----------------------------------*/
+  .fotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 10px;
+    padding-bottom: 30px;
+    color: white;
+  }
+  .fotos div {
+    padding: 30px;
+    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  .fotos div img {
+    width: 100%;
+  }
+  .fotos div p {
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+  .fotos div h1 {
+    font-size: 1rem;
+    margin: 10px;
+    padding-top: 10px;
+  }
+  .fotos div:hover {
+    height: 900px;
+    color: black;
+  }
+  /*Reservas ----------------------------------*/
+  .reservas {
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .reservas img {
+    max-width: 30px;
+    margin: 5px;
+    padding-bottom: 5px;
+  }
+  .reservas label {
+    padding-right: 10px;
+  }
+  .datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .datos div {
+    margin: 2px;
+  }
+  .buscar {
+    padding-top: 2px;
+  }
+  .buscar input {
+    width: 300px;
+  }
+  /*Fotografías ----------------------------------*/
+  .contenedor-galeria {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  .contenedor-galeria div {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-galeria div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .g1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .g2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .g3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .g4 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  .g5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .g6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .g8 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  /*Contacto ----------------------------------*/
   .form-contact {
-    width: 450px;
+    width: 350px;
     margin: auto;
     padding: 10px 20px;
     -webkit-box-sizing: border-box;
@@ -248,15 +339,16 @@ body {
   }
   .form-contact h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 1rem;
     margin-bottom: 20px;
   }
   .form-contact input, .form-contact textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
+    font-size: 0.8rem;
   }
-  /*Footer*/
+  /*Footer ----------------------------------*/
   .logo-foot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -271,7 +363,7 @@ body {
   }
   .logo-foot img {
     max-width: 150px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   footer {
     display: -webkit-box;
@@ -296,6 +388,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 30px;
   }
   .isologo-foot img {
     max-width: 100px;
@@ -325,22 +418,63 @@ body {
   .contacto p {
     font-size: 0.8rem;
   }
-  .redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .img-redes {
-    max-width: 20px;
-    margin: 10px;
-  }
 }
 
-/*VERSIÓN WEB*/
-@media screen and (min-width: 600px) {
+/*VERSIÓN WEB --------------------- VERSIÓN WEB --------------------- VERSIÓN WEB */
+@media screen and (min-width: 576px) {
+  /*Home - Index ----------------------------------*/
+  .logo-banner {
+    width: 300px;
+    margin-top: 20%;
+  }
+  .banner-home {
+    background: url(../img/banner-home.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-cabanas {
+    background: url(../img/banner-cabanas.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-ubicacion {
+    background: url(../img/banner-ubicacion.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-reservas {
+    background: url(../img/banner-reservas.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-fotografias {
+    background: url(../img/banner-fotografias.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .banner-contacto {
+    background: url(../img/banner-contacto.png);
+    background-size: 100%;
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .iconos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -357,8 +491,129 @@ body {
   .iconos div img {
     max-width: 60px;
   }
+  /*Cabañas ----------------------------------*/
+  .fotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px;
+    color: white;
+    height: 1000px;
+  }
+  .fotos div {
+    padding: 30px;
+    height: 450px;
+    width: 50%;
+    text-align: center;
+  }
+  .fotos div p {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .fotos div h1 {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding-top: 20px;
+  }
+  .fotos div:hover {
+    height: 520px;
+    color: black;
+  }
+  /*Reservas ----------------------------------*/
+  .reservas {
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .reservas img {
+    max-width: 30px;
+    margin: 5px;
+    padding-bottom: 5px;
+  }
+  .reservas label {
+    padding-right: 8px;
+  }
+  .datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .datos div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .buscar {
+    padding-top: 5px;
+  }
+  /*Fotografías ----------------------------------*/
+  .contenedor-galeria {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+  .contenedor-galeria div {
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor-galeria div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .g1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .g4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .g5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .g6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .g8 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  /*Contacto ----------------------------------*/
   .form-contact {
-    width: 450px;
+    width: 1100px;
     margin: auto;
     padding: 10px 20px;
     -webkit-box-sizing: border-box;
@@ -367,14 +622,15 @@ body {
   }
   .form-contact h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
-  .form-contact input, .form-contact textarea {
+  .form-contact input, .form-contact textarea, .form-contact button {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
   }
+  /*Footer ----------------------------------*/
   .logo-foot img {
     padding-top: 50px;
     max-width: 250px;
@@ -407,22 +663,6 @@ body {
   }
   .contacto p {
     font-size: 1rem;
-  }
-  .redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .img-redes {
-    max-width: 30px;
-    margin: 10px;
-  }
-  .galeria {
-    padding-left: 200px;
-    padding-right: 200px;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
